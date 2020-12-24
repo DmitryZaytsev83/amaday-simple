@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amaday | Video</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?95"
+            charset="windows-1251"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/"><img src="./assets/logo.svg" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a href="/video" class="nav-link">Video</a></li>
+                <li id="contacts"><a href="#"
+                                     class="nav-link">Kontacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="modal" class="modal">
+    <div class="modal-card">
+        <p>Координаты для организаторов концертов:</p>
+        <p>+7-953-748-91-32</p>
+        <p>amaday82@gmail.com</p>
+    </div>
+</div>
+<main>
+    <div class="container">
+        <h2>Video</h2>
+        <!-- Put this script tag to the place, where the Share button will be -->
+        <script type="text/javascript">
+            document.write(VK.Share.button(false, {
+                type: "custom",
+                text: "<img src=\"https://vk.com/images/share_32_2x.png\" width=\"32\" height=\"32\" />"
+            }));
+        </script>
+    </div>
+</main>
+<script src="./assets/main.js"></script>
+</body>
+</html>
+
